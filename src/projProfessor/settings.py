@@ -39,7 +39,8 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'widget_tweaks',
     'core.apps.CoreConfig',
-    'login.apps.LoginConfig'
+    'login.apps.LoginConfig',
+    'board.apps.BoardConfig'
 ]
 
 LOGIN_REDIRECT_URL = '/home'
