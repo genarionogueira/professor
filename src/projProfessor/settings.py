@@ -25,7 +25,7 @@ SECRET_KEY = '5%az^aeny3_q11ff@h#4o58x8s2$h%914h-&z3i3!aje^4eikd'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['http//genario.pythonanywhere.com']
+ALLOWED_HOSTS = ['genario.pythonanywhere.com']
 
 
 # Application definition
@@ -80,9 +80,12 @@ WSGI_APPLICATION = 'projProfessor.wsgi.application'
 # https://docs.djangoproject.com/en/2.0/ref/settings/#databases
 
 DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+     'default': {
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'genario$professor',
+        'USER': 'genario',
+        'PASSWORD': 'noguea01',
+        'HOST': 'genario.mysql.pythonanywhere-services.com',
     }
 }
 
